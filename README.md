@@ -27,7 +27,7 @@ Ordination of microbial communities across sample types, with a PERMANOVA test q
 
 Within-sample diversity across sample types, compared with a Kruskal-Wallis test.
 
-#------------------------------------------------------------------------------------#
+---
 
 ## Dataset
 
@@ -35,13 +35,13 @@ This demo uses **GlobalPatterns**, a public 16S rRNA dataset bundled with the `p
 package (Caporaso et al., 2011). It is included here purely to demonstrate the workflow —
 the same pipeline applies to any 16S dataset.
 
-#------------------------------------------------------------------------------------#
+---
 
 ## Tools
 
 `R` · `phyloseq` · `vegan` · `ggplot2`
 
-#-----------------------------------------------------------------------------------#
+---
 
 ## How to run
 
@@ -57,7 +57,7 @@ source("analysis.R")
 
 This produces two figures: `pcoa_public.png` and `alpha_public.png`.
 
-#------------------------------------------------------------------------------------#
+---
 
 ## About
 
