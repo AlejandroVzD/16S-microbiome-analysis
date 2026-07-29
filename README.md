@@ -48,7 +48,7 @@ workflow doesn't just run, it produces biologically coherent results.
 
 **Taxonomic composition (top phyla)**
 
-![Taxonomic composition](figures/01_composition.png)
+![Taxonomic composition](01_composition.png)
 
 Relative abundance of the dominant phyla per sample, split by group. Bacteroidetes
 and Firmicutes dominate both groups, with Fusobacteria noticeably elevated in
@@ -56,14 +56,14 @@ tumor samples.
 
 **Alpha diversity**
 
-![Alpha diversity](figures/02_alpha_diversity.png)
+![Alpha diversity](02_alpha_diversity.png)
 
 Within-sample richness (Observed) and diversity (Shannon), compared between groups
 with a Kruskal-Wallis test. Both indices are lower in tumor tissue.
 
 **Beta diversity — Bray-Curtis PCoA**
 
-![Beta diversity PCoA](figures/03_beta_pcoa.png)
+![Beta diversity PCoA](03_beta_pcoa.png)
 
 Ordination of community composition, with **PERMANOVA** testing for a group effect
 and **betadisper** checking group dispersion. Groups differ significantly in
@@ -71,14 +71,14 @@ composition (PERMANOVA R² = 0.022, p = 0.001).
 
 **Differential abundance — DESeq2**
 
-![DESeq2 differential abundance](figures/04_deseq2.png)
+![DESeq2 differential abundance](04_deseq2.png)
 
 Genera significantly enriched in tumor vs healthy tissue (Wald test, BH-adjusted
 p < 0.05), ranked by log2 fold change.
 
 **Biomarkers — LEfSe**
 
-![LEfSe biomarkers](figures/05_lefse.png)
+![LEfSe biomarkers](05_lefse.png)
 
 Discriminant genera identified by **LEfSe** (Kruskal-Wallis + LDA, LDA score > 2),
 colored by the group in which each is enriched.
@@ -131,12 +131,11 @@ its own to reproduce every figure above.
 ├── LICENSE
 ├── 01_upstream_dada2.R          # raw reads -> ASV table (DADA2)
 ├── 02_downstream_analysis.R     # abundance table -> diversity, stats, biomarkers
-└── figures/
-    ├── 01_composition.png
-    ├── 02_alpha_diversity.png
-    ├── 03_beta_pcoa.png
-    ├── 04_deseq2.png
-    └── 05_lefse.png
+├── 01_composition.png
+├── 02_alpha_diversity.png
+├── 03_beta_pcoa.png
+├── 04_deseq2.png
+└── 05_lefse.png
 ```
 
 ---
