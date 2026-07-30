@@ -137,6 +137,10 @@ its own to reproduce every figure above.
 ├── 04_deseq2.png
 └── 05_lefse.png
 ```
+---
+## Related work
+
+**Predictive counterpart:** [microbiome-ml-classifier](https://github.com/AlejandroVzD/microbiome-ml-classifier) — a Random Forest that predicts Healthy vs Tumor from these same microbiome profiles. Its top predictive genera recover the biomarkers found here, reaching the same biology through a predictive rather than descriptive method.
 
 ---
 
